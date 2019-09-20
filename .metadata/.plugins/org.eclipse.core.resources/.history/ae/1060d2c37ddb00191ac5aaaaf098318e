@@ -1,0 +1,26 @@
+package exo2;
+
+import javax.swing.JFrame;
+
+import swing1.Ecouter;
+
+public class Fenetre extends JFrame{
+
+	public Fenetre(int x,int y,String titer) {
+//		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(x,y,200,200);
+		setTitle(titer);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+Ecouteur ecouteur1 = new Ecouteur();
+Fenetre fenetre1 = new Fenetre(200, 300, "premier fenetre");
+fenetre1.addMouseListener(ecouteur1);
+
+Ecouteur ecouteur2 = new Ecouteur();
+Fenetre fenetre2 = new Fenetre(100, 200, "deuxieme fenetre");
+fenetre2.addMouseListener(ecouteur2);
+
+	}
+
+}

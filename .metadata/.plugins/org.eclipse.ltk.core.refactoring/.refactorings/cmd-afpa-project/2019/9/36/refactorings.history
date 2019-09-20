@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;afpa.console.command.River&apos; to &apos;CommandeRiver&apos;&#x0D;&#x0A;- Original project: &apos;cmd-afpa-project&apos;&#x0D;&#x0A;- Original element: &apos;afpa.console.command.River&apos;&#x0D;&#x0A;- Renamed element: &apos;afpa.console.command.CommandeRiver&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;River&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;afpa.console.command{River.java[River" matchStrategy="1" name="CommandeRiver" qualified="false" references="true" similarDeclarations="false" stamp="1567668949269" textual="false" version="1.0"/>
+</session>

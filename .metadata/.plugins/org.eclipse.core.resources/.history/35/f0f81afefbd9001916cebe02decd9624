@@ -1,0 +1,33 @@
+package swing1;
+
+import javax.swing.JFrame;
+
+public class MaFenêtre extends JFrame {
+    public MaFenêtre(int posX, int posY, String titre) {
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setBounds(posX, posY, 400, 300);
+        this.setTitle(titre);
+        this.setVisible(true);
+    }
+    public static void main(String[] args){
+    	Ecouter ecouter1 = new Ecouter();
+		JFrame fenêtre = new JFrame();
+		fenêtre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		fenêtre.setSize(400,300);
+		fenêtre.setLocation(10,20);
+		fenêtre.setTitle("Fenêtre principale 1");
+		fenêtre.setVisible(true);
+		fenêtre.addWindowListener(ecouter1);
+		
+		Ecouter ecouter2 = new Ecouter();
+		JFrame fenetre2 = new JFrame();
+		fenetre2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		fenetre2.setSize(400,300);
+		fenetre2.setLocation(10,20);
+		fenetre2.setTitle("Fenêtre principale 2");
+		fenetre2.setVisible(true);
+		
+		fenetre2.addWindowListener(ecouter2);
+		
+	}
+}

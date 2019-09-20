@@ -1,0 +1,7 @@
+package exo3;
+
+import javax.swing.JFrame;
+
+public class Image extends JFrame{
+	public Image()
+}

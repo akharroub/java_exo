@@ -1,0 +1,17 @@
+package calc;
+
+import java.util.Arrays;
+
+public class CalculatriceTableauStream {
+
+	public static int mettreZeroDansLesCasesAIndicesImpair(int[] tab) {
+		
+		return Arrays.stream(tab).sum();
+	}
+
+	public static int sommeElements(int[] tabInt) {
+		
+		return 0;
+	}
+
+}

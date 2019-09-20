@@ -1,0 +1,18 @@
+package exo1;
+
+import javax.swing.JFrame;
+
+public class Programme {
+
+	public static void main(String[] args) {
+
+JFrame fenetre = new JFrame();
+fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+fenetre.setSize(300,300);
+fenetre.setLocation(200,300);
+fenetre.setTitle("premier fenetre");
+fenetre.setVisible(true);
+
+	}
+
+}

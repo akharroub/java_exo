@@ -1,0 +1,16 @@
+package swing1;
+
+import javax.swing.JFrame;
+
+public class Exemple1
+{
+	public static void main(String[] args)
+	{
+		JFrame fenêtre = new JFrame();
+		fenêtre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		fenêtre.setSize(400,300);
+		fenêtre.setLocation(10,20);
+		fenêtre.setTitle("Fenêtre principale");
+		fenêtre.setVisible(true);
+	}
+}

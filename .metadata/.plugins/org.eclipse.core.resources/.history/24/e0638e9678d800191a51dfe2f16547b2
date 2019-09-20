@@ -1,0 +1,6 @@
+package exo;
+
+public interface IAffichage {
+	public Boolean Iaffichage(Integer i);
+
+}

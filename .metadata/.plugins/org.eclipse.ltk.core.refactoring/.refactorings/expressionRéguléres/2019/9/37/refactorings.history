@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;exemple1&apos; to &apos;exemple&apos;&#x0D;&#x0A;- Original project: &apos;expressionRéguléres&apos;&#x0D;&#x0A;- Original element: &apos;expressionRéguléres/src/exemple1&apos;&#x0D;&#x0A;- Renamed element: &apos;expressionRéguléres/src/exemple&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;exemple1&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;exemple1" name="exemple" qualified="false" references="true" stamp="1568277527249" textual="false" version="1.0"/>
+</session>

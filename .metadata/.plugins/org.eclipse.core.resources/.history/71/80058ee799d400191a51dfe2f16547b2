@@ -1,0 +1,11 @@
+package exo3;
+
+public class Occurence extends Thread{
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

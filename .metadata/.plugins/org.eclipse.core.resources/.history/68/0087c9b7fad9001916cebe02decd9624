@@ -1,0 +1,8 @@
+package swing1;
+
+import javax.swing.JFrame;
+
+public class Exemple1 extends Ecouter{
+	
+	
+}

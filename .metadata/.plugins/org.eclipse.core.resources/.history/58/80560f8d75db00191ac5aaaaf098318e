@@ -1,0 +1,61 @@
+package exo1;
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.JFrame;
+
+public class Programme extends JFrame implements MouseListener {
+	public Programme() {
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(20,30,40,300);
+		addMouseListener(this);
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		System.out.println("appui "+getX()+" "+getY());
+
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		System.out.println("relachemment "+getX()+" "+getY());
+	}
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void main(String[] args) {
+
+Programme nn = new Programme();
+		JFrame fenetre = new JFrame();
+		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		fenetre.setSize(300,300);
+		fenetre.setLocation(200,300);
+		fenetre.setTitle("premier fenetre");
+		fenetre.setVisible(true);
+		fenetre.addMouseListener(nn);
+
+	}
+
+
+
+	
+
+}

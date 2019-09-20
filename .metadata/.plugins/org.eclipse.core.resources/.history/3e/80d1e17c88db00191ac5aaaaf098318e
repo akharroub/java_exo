@@ -1,0 +1,20 @@
+package exo3;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+
+public class Programme extends JFrame{
+
+
+
+	public Programme(){
+		
+		setSize(1280, 1024);
+		setTitle("Test");
+		setContentPane(new AfficheImage("C:\\animale.jpg"));
+		getContentPane().setLayout(new BorderLayout());
+		this.setVisible(true);
+	}
+}
+

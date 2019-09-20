@@ -1,0 +1,14 @@
+package calc;
+
+import java.util.Arrays;
+
+public class CalculatriceTableauStream {
+
+	
+
+	public static int sommeElements(int[] tabInt) {
+		
+		return Arrays.stream(tabInt).sum();
+	}
+
+}

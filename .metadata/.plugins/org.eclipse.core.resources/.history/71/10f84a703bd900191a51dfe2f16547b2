@@ -1,0 +1,10 @@
+package calc;
+
+public class CalculatriceTableauStream {
+
+	public static int[] mettreZeroDansLesCasesAIndicesImpair(int[] tab) {
+		
+		return null;
+	}
+
+}

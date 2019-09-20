@@ -1,0 +1,204 @@
+package exec;
+
+import calc.Calculatrice;
+import calc.CalculatriceTableau;
+import calc.MotsUtils;
+import tools.Clavier;
+
+public class Exercices {
+
+    public static void main(String[] args) {
+//	Exercices.exercice1();
+//	Exercices.exercice2();
+//	Exercices.exercice3();
+//	Exercices.exercice4();
+//	Exercices.exercice5();
+//	Exercices.exercice6();
+//  Exercices.exercice7();
+//  Exercices.exercice7bis();	
+//  Exercices.exercice8();
+//  Exercices.exercice9();
+//  Exercices.exercice10();
+//  Exercices.exercice11();
+//  Exercices.exercice12();
+//  Exercices.exercice13();
+//  Exercices.exercice14();
+//  Exercices.exercice16();
+//  Exercices.exercice17();
+//  Exercices.exercice18();
+//    Exercices.exercice19();
+    	 Exercices.exercice20();
+	
+    }
+
+    public static void exercice1() {
+	System.out.println("*************************************");
+	System.out.println("Addition deux entiers : ");
+	int parametreX = Clavier.lireInt();
+	int parametreY = Clavier.lireInt();
+	int res = Calculatrice.addition(parametreX, parametreY);
+	System.out.println("la somme = " + res);
+    }
+    
+    public static void exercice2() {
+        System.out.println("*************************************");
+        System.out.println("Soustraction deux entiers : ");
+        int parametreX = Clavier.lireInt();
+        int parametreY = Clavier.lireInt();
+        int res = Calculatrice.soustraction(parametreX, parametreY);
+        System.out.println("la soustraction = " + res);
+     }
+    
+    public static void exercice3() {
+        System.out.println("*************************************");
+        System.out.println("Multiplication deux entier : ");
+        int parametreX = Clavier.lireInt();
+        int parametreY = Clavier.lireInt();
+        int res = Calculatrice.multiplication(parametreX, parametreY);
+        System.out.println("la multiplication = " + res);
+   }
+
+   public static void exercice4() {
+        System.out.println("*************************************");
+        System.out.println("Maximum deux entier : ");
+        int parametreX = Clavier.lireInt();
+        int parametreY = Clavier.lireInt();
+        int res = Calculatrice.max(parametreX, parametreY);
+        System.out.println("le plus grand nombre = " + res);
+   }
+
+   public static void exercice5() {
+        System.out.println("*************************************");
+        System.out.println("Signe d'un entier : ");
+        int parametreX = Clavier.lireInt();
+        char res = Calculatrice.signe(parametreX);
+        System.out.println("le signe = " + res);
+   }
+   
+   public static void exercice6() {
+	    System.out.println("*************************************");
+	    System.out.println("Somme tableau de 5 elements : ");
+	    int[] tabInt = Clavier.lireTableauInt(5);
+	    int res = CalculatriceTableau.sommeElements(tabInt);
+	    System.out.println("la somme = " + res);
+	   }
+    
+    public static void exercice7() {
+        System.out.println("*************************************");
+        System.out.println("Plus petit element d'un tableau de 5 elements : ");
+        int[] tabInt = Clavier.lireTableauInt(5);
+        int res = CalculatriceTableau.plusPetitElement(tabInt);
+        System.out.println("Plus petit element = " + res);
+       }
+    
+    public static void exercice7bis() {
+        System.out.println("*************************************");
+        System.out.println("Plus grand element d'un tableau de 5 elements : ");
+        int[] tabInt = Clavier.lireTableauInt(5);
+        int res = CalculatriceTableau.plusGrandElement(tabInt);
+        System.out.println("Plus grand element = " + res);
+       }
+    
+    public static void exercice8() {
+        System.out.println("*************************************");
+        System.out.println("Somme de tous les élémens de 2 tableaux de 5 entiers : ");
+        System.out.println("*** Premier tableau");
+        int[] tabInt = Clavier.lireTableauInt(5);
+        System.out.println("*** Deuxieme tableau");
+        int[] tabInt2 = Clavier.lireTableauInt(5);
+        long res = CalculatriceTableau.sommeElementsDeuxTableaux(tabInt, tabInt2);
+        System.out.println("la somme = " + res);
+       }
+    
+    
+    public static void exercice9() {
+        System.out.println("*************************************");
+        System.out.println("Tri ascendant d'un tableau de 5 elements : ");
+        int[] tabInt = Clavier.lireTableauInt(5);
+        int[] res = CalculatriceTableau.triAscendant(tabInt);
+        System.out.println("le tableau trié = " + Clavier.contenuTableau(res));
+       }
+        
+    public static void exercice10() {
+        System.out.println("*************************************");
+        System.out.println("Factorielle d'un entier : ");
+        int parametreX = Clavier.lireInt();
+        long res = Calculatrice.factorielle(parametreX);
+        System.out.println("factorielle = " + res);
+       }
+    
+    public static void exercice11() {
+        System.out.println("*************************************");
+        System.out.println("Conjonction (le and logique)");
+        boolean boolA = Clavier.lireBoolean();
+        boolean boolB = Clavier.lireBoolean();
+        boolean res = Calculatrice.conjonction(boolA, boolB);
+        System.out.println("conjonction = " + res);
+       }
+    
+    public static void exercice12() {
+        System.out.println("*************************************");
+        System.out.println("Disjonction (le ou logique)");
+        boolean boolA = Clavier.lireBoolean();
+        boolean boolB = Clavier.lireBoolean();
+        boolean res = Calculatrice.disjonction(boolA, boolB);
+        System.out.println("disjontion = " + res);
+       }
+    
+    public static void exercice13() {
+        System.out.println("*************************************");
+        System.out.println("Negation (le non logique)");
+        boolean boolA = Clavier.lireBoolean();
+        boolean res = Calculatrice.negation(boolA);
+        System.out.println("négation = " + res);
+       }
+    
+      public static void exercice14() {
+        System.out.println("*************************************");
+        System.out.println("Conjonction d'un tableau de 5 elements boolean ");
+        boolean[] tabBool = Clavier.lireTableauBoolean(5);
+        System.out.println("conjonction = " + CalculatriceTableau.conjonction(tabBool));
+       }
+    
+    public static void exercice16() {
+        System.out.println("*************************************");
+        System.out.println("Rechercher le nombre d'element pair dans un tableau : ");
+        int[] tab = Clavier.lireTableauInt(6);
+        long res = CalculatriceTableau.nombreDElementsPair(tab);
+        System.out.println("nombre d element pair = " + res);
+       }
+    
+    public static void exercice17() {
+        System.out.println("*************************************");
+        System.out.println("Rechercher si un element existe ou pas : ");
+        int[] tab = Clavier.lireTableauInt(4);
+        System.out.println("Saisir l'element à chercher");
+        int param = Clavier.lireInt();
+        boolean res = CalculatriceTableau.chercheSiUnElementExiste(param, tab);
+        System.out.println("L element existe ? = " + res);
+       }
+    
+    public static void exercice18() {
+        System.out.println("*************************************");
+        System.out.println("Methode qui met 0 dans les cases à indice impair d'un tableau : ");
+        int[] tab = Clavier.lireTableauInt(6);
+        int[] res = CalculatriceTableau.mettreZeroDansLesCasesAIndicesImpair(tab);
+        System.out.println("Le tableau = " + Clavier.contenuTableau(res));
+       }
+    
+    public static void exercice19() {
+        System.out.println("*************************************");
+        System.out.println("Methode qui decale les elements d un tableau d une case : ");
+        int[] tab = Clavier.lireTableauInt(6);
+        int[] res = CalculatriceTableau.decalerLesElementsTableauDUneCase(tab);
+        System.out.println("Le tableau = " + Clavier.contenuTableau(res));
+       }
+    
+    public static void exercice20() {
+        System.out.println("*************************************");
+        System.out.println("Methode qui inverse un mot saisi (abc --> cba) : ");
+        String str = Clavier.lireString();
+        String res = MotsUtils.inverser(str);
+        System.out.println("l'inverse du mot " + str + " est " + res);
+       }
+}

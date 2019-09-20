@@ -1,0 +1,23 @@
+package swing1;
+
+import javax.swing.JFrame;
+
+public class Exemple1 extends Ecouter{
+	
+	public static void main(String[] args){
+		JFrame fenêtre = new JFrame();
+		fenêtre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		fenêtre.setSize(400,300);
+		fenêtre.setLocation(10,20);
+		fenêtre.setTitle("Fenêtre principale");
+		fenêtre.setVisible(true);
+		
+		JFrame fenetre2 = new JFrame();
+		fenetre2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		fenetre2.setSize(400,300);
+		fenetre2.setLocation(10,20);
+		fenetre2.setTitle("Fenêtre principale 2");
+		fenetre2.setVisible(true);
+		System.out.println("fin");
+	}
+}

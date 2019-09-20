@@ -1,0 +1,18 @@
+package exemple;
+
+public class RegExpMachtching {
+	
+	public static boolean validImail(String email) {
+		String regExp = "^.+@.+\\..+$";
+		return email.matches(regExp);
+		
+	}
+
+	public static void main(String[] args) {
+		System.out.println(validImail("akharroub@gmail.com"));
+		System.out.println(validImail("akharroub@gmail@com"));
+		System.out.println(validImail("akharroub.gmail.com"));
+
+	}
+
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\59013-57-10\Documents\ols"/>
+		<item value="C:\git-repos\cmd-project"/>
+		<item value="C:\git-repos\cda-projet-cmd-jpc-ai-ma-kb\cda-projet-cmd-jpc-ai-ma-kb\cmd-project"/>
+		<item value="C:\Users\59013-57-10\Documents\cda-projet-cmd-jpc-ai-ma-kb\projet java cmd-project"/>
+		<item value="C:\git-repos\cda-projet-cmd-jpc-ai-ma-kb\projet java cmd-project"/>
+		<item value="C:\outils\eclipse\workspace\workspaceMohamed\heritageee"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\59013-57-10\Desktop\cda-projetFermefin-godderidge-anthony.jar"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+</section>

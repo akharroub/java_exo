@@ -1,0 +1,10 @@
+package exo2;
+
+public class PointStream {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

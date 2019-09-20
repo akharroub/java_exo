@@ -1,0 +1,12 @@
+package swing1;
+
+import javax.swing.JFrame;
+
+public class MaFenêtre extends JFrame {
+    public MaFenêtre(int posX, int posY, String titre) {
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setBounds(posX, posY, 400, 300);
+        this.setTitle(titre);
+        this.setVisible(true);
+    }
+}

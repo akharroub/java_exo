@@ -1,0 +1,23 @@
+package exo3;
+
+import java.awt.BorderLayout;
+import java.awt.Graphics;
+import java.awt.Image;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Programme extends JFrame{
+
+
+
+	public Programme(){
+		
+		setSize(1280, 1024);
+		setTitle("Test");
+		setContentPane(new AfficheImage("C:\\impress2.gif"));
+		getContentPane().setLayout(new BorderLayout());
+		this.setVisible(true);
+	}
+}
+

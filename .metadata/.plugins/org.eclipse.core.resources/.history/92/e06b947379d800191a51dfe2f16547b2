@@ -1,0 +1,38 @@
+package exo;
+
+import java.util.function.Predicate;
+
+public class Affichage {
+
+	//	private static void affichageSelectif(int[] tab, IAffichage a) {
+	//		for (int i : tab) {
+	//			if(a.Iaffichage(i)) {
+	//				System.out.println(i+" ");
+	//			}
+	//		}
+
+
+
+
+
+
+	public static void main(String[] args) {
+
+		int [] tab = {1, 4, -2, 9, -3, 5, -3, 45, -54 } ;
+		System.out.println ("-- Les positifs de tab : ") ;
+//		affichageSelectif (tab, ee -> ee > 0) ;
+		Predicate<Integer> pa =  ee -> ee > 0;
+		Predicate<Integer> pa1 =  ee -> ee %2 == 0;
+
+	}
+
+
+	private static void affichageSelectif(int[] tab, Predicate<Integer> a) {
+		for (int i : tab) {
+			if (a.test(i)) {
+				System.out.println(i);
+			}
+		}
+
+	}
+}

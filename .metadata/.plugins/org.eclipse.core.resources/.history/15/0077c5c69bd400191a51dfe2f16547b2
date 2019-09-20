@@ -1,0 +1,49 @@
+package exo3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Occurence<T> extends Thread{
+
+	private List<T> tab;
+	private static final Integer TAILLE_MIN = 40;
+
+
+	public Occurence(List<T> tab) {
+		this.tab = new ArrayList<>();
+	}
+
+	public static int compteurChar(String str, char ch) 
+	{
+		int compteur = 0;                  
+		for (int i = 0; i < str.length(); i++) 
+			if (str.charAt(i) == ch)             
+				compteur++;                         
+		return compteur;   
+	}
+
+	@Override
+	public void run() {
+
+
+	}
+
+
+
+	public static void main(String[] args) {
+
+
+		String chara="mohamed akharroub";
+
+		//Occurence<String> c1 = new Occurence<>('a');
+		int nbr_occur = 0;
+		for (int i = 0; i < chara.length(); i++) {
+			nbr_occur=compteurChar(chara, 'a');
+		}
+
+		System.out.println ("Nombre de 'a' dans le texte= "+nbr_occur);
+
+
+	}
+
+}

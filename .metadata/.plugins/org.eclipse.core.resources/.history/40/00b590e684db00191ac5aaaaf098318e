@@ -1,0 +1,15 @@
+package exo3;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+
+public class Image extends JFrame{
+	public Image() {
+		setSize(1280,1024);
+		setTitle("Image");
+		setContentPane(new newImage(‪"C:\Users\59013-57-10\Desktop\animale.jpg"));
+		getContentPane().setLayout(new BorderLayout());
+		setVisible(true);
+	}
+}

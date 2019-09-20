@@ -1,0 +1,65 @@
+package exo3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Occurence<T> extends Thread{
+
+	public List<T> getTab() {
+		return tab;
+	}
+
+
+
+	private List<T> tab;
+	private static final Integer TAILLE_MIN = 40;
+
+
+	public Occurence() {
+		this.tab = new ArrayList<>();
+	}
+	public void ajouter(T a) {
+		tab.add(a);
+	}
+
+	public int compteurChar(List<T> str, char ch) {
+		int compteur = 0;                  
+		for (int i = 0; i < str.size(); i++) 
+			if (str.get(i).equals(ch))             
+				compteur++;                         
+		return compteur;   
+	}
+	
+
+	@Override
+	public void run() {
+		int nbr_occur = 0;
+		nbr_occur = this.compteurChar(this.tab, 'a');
+		
+		System.out.println ("Nombre de 'a' dans le texte= "+nbr_occur);
+
+	}
+
+
+
+	public static void main(String[] args) {
+
+
+		//String chara="mohamed akharroub ajbjafjhoahohojanojn jfbhjfvdaygbiagauybgfinhfatfytaatyauhuhiuezhdaaaoh,hauzgbaeuahnuaheyazgfvdabnaiudauoh fvau viag bigfytfaaaihnauhaiuafuoanau aygbauhfifgfvaygfanfbfiufufe";
+
+		Occurence<Character> c1 = new Occurence<>();
+		
+		
+		c1.ajouter('a');
+		c1.ajouter('b');
+		
+		//for (int i = 0; i < chara.length(); i++) {
+			c1.start();
+		//}
+
+		
+
+
+	}
+
+}

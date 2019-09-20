@@ -1,0 +1,34 @@
+package exo3;
+
+import java.awt.Graphics;
+import java.awt.Image;
+
+import javax.swing.JPanel;
+
+
+class AfficheImage extends JPanel{
+
+	Image eau;
+
+	public AfficheImage(String s){
+
+		eau = getToolkit().getImage(s);
+	}
+
+	public void paintComponent(Graphics g){
+
+		super.paintComponent(g);
+		g.drawImage(eau, 0, 0, getWidth(), getHeight(), this);
+	}
+
+
+	//public class affichage{
+
+	public static void main(String[] args){
+		Programme test = new Programme();
+	}
+}
+
+
+
+

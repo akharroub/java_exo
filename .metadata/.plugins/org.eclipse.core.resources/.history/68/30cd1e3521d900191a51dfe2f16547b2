@@ -1,0 +1,46 @@
+package exo3;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class PointStream {
+
+	private int x, y ;
+
+	public PointStream (int x, int y) {
+		this.x = x ; 
+		this.y = y ; 
+	}
+
+	public int getX() { 
+		return x ; 
+	}
+
+	public int getY() { 
+		return y ; 
+	}
+
+	@Override
+	public String toString() {
+		return "Point [x=" + x + " , y=" + y + "]";
+	}
+
+	public static void main(String[] args) {
+		
+		
+		List<PointStream> ps = new ArrayList<PointStream>();
+		ps.add(new PointStream(1,6));
+		ps.add(new PointStream(5, 2));
+		ps.add(new PointStream(-3, 4));
+		ps.add(new PointStream(-2, 8));
+		
+		System.out.println(ps.toString());
+		
+		Stream<PointStream> ss= ps.stream();
+		ss.forEach(System.out::println);
+		
+
+	}
+
+}
